@@ -19,3 +19,5 @@ Thumbs.db
 # PDFs e fontes grandes (não versionar)
 rubrics_oficiais/fontes/
 *.pdf
+
+.cache/
