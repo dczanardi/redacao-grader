@@ -1,0 +1,64 @@
+{
+  "name": "CSA - 3ª Série - Dissertação (v2)",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Tema e constituição do gênero",
+      "weight": 0.4,
+      "levels": {
+        "0": "Não constitui dissertação OU foge ao tema.",
+        "1": "Tangencia o tema; estrutura expositiva; planejamento frágil.",
+        "2": "Compreensão simples do tema; base em coletânea/senso comum; tese pouco nítida.",
+        "3": "Boa compreensão do tema; tese presente; organização suficiente (introdução-desenvolvimento-conclusão).",
+        "4": "Análise adequada; planejamento consistente; paragrafação e encadeamento firmes; uso pontual de repertório.",
+        "5": "Análise excelente; organização exemplar; autoria evidente; repertório selecionado e integrado com precisão."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Coerência da argumentação",
+      "weight": 0.3,
+      "levels": {
+        "0": "Texto não articulado; sem progressão lógica.",
+        "1": "Conclusões frágeis; encadeamento deficiente; exemplos genéricos.",
+        "2": "Base MAJORITARIAMENTE em senso comum. Sem repertório concreto (autores/obras/dados/leis/estudos/casos verificáveis). **Sem repertório, NÃO atribuir acima deste nível.**",
+        "3": "Argumentação coerente com AO MENOS 1 repertório concreto simples (ex.: um dado, autor, obra, lei, evento histórico) **relacionado e comentado**.",
+        "4": "Argumentação consistente com repertório MÚLTIPLO/qualificado (dados + autores/obras), **integrado** ao raciocínio (não apenas citado).",
+        "5": "Argumentação crítica e densa; repertório variado e preciso, articulado de modo orgânico (contraponto, causa-efeito, implicações)."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Correção gramatical e adequação vocabular",
+      "weight": 0.3,
+      "levels": {
+        "0": "Domínio insuficiente do padrão culto; graves inadequações.",
+        "1": "Muitos desvios e marcas de oralidade.",
+        "2": "Padrão mediano; problemas gramaticais e de vocabulário.",
+        "3": "Bom padrão; alguns descuidos; vocabulário adequado.",
+        "4": "Domínio consistente; clareza e expressividade.",
+        "5": "Domínio excelente; riqueza lexical; registro preciso."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1","C2","C3"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; tema/gênero diversos do proposto; elementos não relacionados ao tema; cópia de mais de três linhas da coletânea ou outra fonte.",
+      "explanation_required": true
+    },
+    {
+      "id": "repertorio_obrigatorio",
+      "label": "Exige repertório concreto (e não senso comum)",
+      "criterion_ids": ["C1","C2"],
+      "type": "cap_level",
+      "max_level": 2,
+      "when": "Se o texto NÃO apresenta repertório concreto além do senso comum — p.ex.: autores/obras, dados, conceitos técnicos, eventos históricos, estudos, leis, casos verificáveis e contextualizados — limitar C2 a nível 2 (0.5) e C1 a no máximo nível 3 (0.7).",
+      "explanation_required": true
+    }
+  ]
+}

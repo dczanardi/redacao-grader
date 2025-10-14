@@ -1,0 +1,88 @@
+{
+  "name": "ENEM (oficial — 5 competências)",
+  "institution": "ENEM",
+  "version": "2025-09-08",
+  "source_type": "oficial",
+  "source_pdf": "rubrics_oficiais/fontes/ENEM/ENEM_2024.pdf",
+  "scale": 100,
+
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4", "C5"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total ao tema; gênero/formato inadequado (não dissertativo-argumentativo); cópia extensa da coletânea ou de outra fonte (mais de 3 linhas); impropérios; desrespeito aos direitos humanos (anulação segundo cartilha).",
+      "explanation_required": true
+    }
+  ],
+
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Competência I — Demonstrar domínio da norma-padrão da língua escrita",
+      "weight": 0.20,
+      "levels": {
+        "0": "Graves inadequações de registro e múltiplos desvios que comprometem a compreensão.",
+        "1": "Muitos desvios (ortografia, acentuação, concordância, regência, pontuação) e marcas de oralidade.",
+        "2": "Alguns desvios recorrentes; interferências pontuais na clareza; vocabulário limitado.",
+        "3": "Poucos desvios; registro globalmente adequado; vocabulário apropriado.",
+        "4": "Raros deslizes; boa precisão sintática, ortográfica e lexical; coesão frasal consistente.",
+        "5": "Domínio excelente do padrão escrito; clareza, precisão e propriedade estilística."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Competência II — Compreender a proposta e aplicar conceitos de áreas do conhecimento",
+      "weight": 0.20,
+      "levels": {
+        "0": "Fuga total ao tema ou não realização da proposta.",
+        "1": "Atendimento muito parcial; foco frágil; mobilização conceitual incipiente.",
+        "2": "Compreensão básica do tema; aplicação simples de conceitos; referências genéricas (senso comum).",
+        "3": "Boa compreensão do tema; mobiliza conceitos pertinentes; inicia repertório sociocultural identificável e relacionado.",
+        "4": "Excelente compreensão; articula conceitos de modo consistente; repertório sociocultural relevante e integrado.",
+        "5": "Compreensão exemplar; recorte preciso e aprofundado; repertório variado e preciso, articulado com sofisticação."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Competência III — Selecionar, relacionar, organizar e interpretar informações/argumentos",
+      "weight": 0.20,
+      "levels": {
+        "0": "Fragmentação; contradições; ausência de progressão argumentativa.",
+        "1": "Encadeamento precário; justificativas frágeis; exemplos genéricos.",
+        "2": "Seleção e organização básicas; argumentos previsíveis; referências pouco desenvolvidas.",
+        "3": "Boa seleção e organização; argumentos pertinentes; ao menos um apoio (dado/autoridade/fato) relacionado e comentado.",
+        "4": "Argumentação consistente; múltiplos apoios articulados ao raciocínio; relação clara entre ideias e evidências.",
+        "5": "Argumentação densa e crítica; integração refinada de informações e pontos de vista; sofisticação na análise."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Competência IV — Demonstrar conhecimento dos mecanismos linguísticos de coesão",
+      "weight": 0.20,
+      "levels": {
+        "0": "Ausência de progressão; referenciação e sequenciação muito deficientes.",
+        "1": "Coesão frágil; conectores pouco adequados; retomadas imprecisas.",
+        "2": "Coesão básica; conectores funcionais; retomadas simples.",
+        "3": "Boa coesão; conectores e retomadas adequados; paragrafação funcional.",
+        "4": "Coesão consistente; articulação clara entre períodos e parágrafos; variedade de recursos coesivos.",
+        "5": "Coesão exemplar; encadeamento refinado; uso preciso e variado de mecanismos coesivos."
+      }
+    },
+    {
+      "id": "C5",
+      "name": "Competência V — Elaborar proposta de intervenção",
+      "weight": 0.20,
+      "levels": {
+        "0": "Ausência de proposta de intervenção ou proposta inviável/incoerente.",
+        "1": "Intervenção muito genérica; faltam elementos essenciais (agente, ação, meio, finalidade/efeito).",
+        "2": "Intervenção básica; presença parcial dos elementos; pouca viabilidade/pertinência.",
+        "3": "Intervenção adequada; inclui elementos centrais (agente/ação/meio/finalidade) com alguma viabilidade.",
+        "4": "Intervenção consistente; elementos completos e articulados ao problema; detalhamento inicial.",
+        "5": "Intervenção exemplar; elementos completos (agente, ação, meio/modo, finalidade/efeito e detalhamento); viável, ética e bem articulada ao diagnóstico."
+      }
+    }
+  ]
+}

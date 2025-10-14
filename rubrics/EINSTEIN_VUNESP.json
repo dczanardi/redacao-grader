@@ -1,0 +1,106 @@
+{
+  "name": "EINSTEIN — VUNESP (operacional 2025)",
+  "institution": "EINSTEIN",
+  "version": "2025-09-08",
+  "source_type": "operacional",
+  "source_pdf": "rubrics_oficiais/fontes/VUNESP/EINSTEIN_2025.pdf",
+  "scale": 100,
+
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total ao tema/gênero; cópia extensa (mais de 3 linhas) da coletânea ou de outra fonte.",
+      "explanation_required": true
+    },
+
+    {
+      "id": "linhas_leq_15_cap_C3_C4",
+      "label": "Texto com 15 linhas ou menos",
+      "criterion_ids": ["C3", "C4"],
+      "type": "cap_if_line_count_at_most",
+      "line_threshold": 15,
+      "max_level": 3,
+      "when": "Até 15 linhas: limita C3 (coesão/coerência) e C4 (expressão/norma) a no máximo nível 3.",
+      "explanation_required": true
+    },
+    {
+      "id": "linhas_leq_20_cap_C3_C4",
+      "label": "Texto com 20 linhas ou menos",
+      "criterion_ids": ["C3", "C4"],
+      "type": "cap_if_line_count_at_most",
+      "line_threshold": 20,
+      "max_level": 4,
+      "when": "Até 20 linhas: não atinge o nível máximo em C3 e C4 (cap no nível 4).",
+      "explanation_required": true
+    },
+
+    {
+      "id": "repertorio_obrigatorio",
+      "label": "Exige repertório verificável",
+      "criterion_ids": ["C2", "C3"],
+      "type": "cap_if_no_repertoire",
+      "max_level": 2,
+      "when": "Ausência de repertório verificável além do senso comum (autores/obras, dados/leis/estudos, fatos históricos, casos concretos).",
+      "explanation_required": true
+    }
+  ],
+
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "A — Tema e Proposta (compreensão da proposta; fuga ao tema/gênero)",
+      "weight": 0.25,
+      "levels": {
+        "0": "Fuga total ao tema/gênero ou não realiza a proposta.",
+        "1": "Atende de modo muito parcial; foco frágil; propósito pouco definido.",
+        "2": "Atende basicamente ao tema/proposta; ainda há desvios ou formulação genérica.",
+        "3": "Boa compreensão do tema; atende às tarefas com pertinência global.",
+        "4": "Atende plenamente; abordagem consistente e relevante.",
+        "5": "Atendimento exemplar; recorte preciso e aprofundado do tema."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "B — Estrutura de texto, gênero/tipo, coerência global",
+      "weight": 0.25,
+      "levels": {
+        "0": "Não configura o gênero/tipo solicitado; sem estrutura reconhecível.",
+        "1": "Estrutura muito frágil; partes ausentes ou mal definidas; propósito pouco claro.",
+        "2": "Estrutura básica com lacunas; predominância de senso comum; pouca sustentação.",
+        "3": "Estrutura adequada; organização reconhecível; ao menos um apoio verificável relacionado ao ponto de vista.",
+        "4": "Estrutura consistente; desenvolvimento articulado; repertório bem integrado.",
+        "5": "Estrutura exemplar; progressão sólida do ponto de vista; repertório variado e preciso, articulado com sofisticação."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "C — Coerência local e coesão (organização interna; conectivos)",
+      "weight": 0.25,
+      "levels": {
+        "0": "Fragmentação; contradições; ausência de progressão.",
+        "1": "Encadeamento precário; conectores pouco adequados; repetições.",
+        "2": "Encadeamento básico; retomadas funcionais; vocabulário simples.",
+        "3": "Boa progressão; conectivos e retomadas adequados; paragrafação funcional.",
+        "4": "Coesão consistente; articulação clara entre ideias, períodos e parágrafos.",
+        "5": "Coesão exemplar; encadeamento refinado; variação e precisão discursiva."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "D — Expressão linguística e norma-padrão",
+      "weight": 0.25,
+      "levels": {
+        "0": "Graves inadequações de registro; múltiplos desvios que comprometem a compreensão.",
+        "1": "Muitos desvios (ortografia, acentuação, concordância, pontuação); fluidez prejudicada.",
+        "2": "Alguns desvios; interferências pontuais na clareza; vocabulário limitado.",
+        "3": "Poucos desvios; registro globalmente adequado; vocabulário apropriado.",
+        "4": "Raros deslizes; boa precisão sintática, ortográfica e lexical.",
+        "5": "Domínio excelente do padrão escrito; clareza, precisão e propriedade estilística."
+      }
+    }
+  ]
+}

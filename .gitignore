@@ -1,0 +1,21 @@
+# Node/Next
+node_modules/
+.next/
+.nextserver/
+out/
+dist/
+
+# Env (secrets)
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# PDFs e fontes grandes (não versionar)
+rubrics_oficiais/fontes/
+*.pdf

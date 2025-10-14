@@ -1,0 +1,86 @@
+{
+  "name": "FUVEST — Dissertativo-argumentativo (operacional 2025)",
+  "institution": "FUVEST",
+  "version": "2025-09-08",
+  "source_type": "operacional",
+  "source_pdf": "rubrics_oficiais/fontes/FUVEST/FUVEST_2025.pdf",
+  "scale": 100,
+
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total ao tema; gênero inadequado (não dissertativo-argumentativo); cópia extensa (mais de 3 linhas) da coletânea ou de outra fonte.",
+      "explanation_required": true
+    },
+    {
+      "id": "repertorio_obrigatorio_C3",
+      "label": "Exige autoria e repertório verificável (C3)",
+      "criterion_ids": ["C3"],
+      "type": "cap_if_no_repertoire",
+      "max_level": 2,
+      "when": "Ausência de autoria e repertório verificável além do senso comum/colagem da coletânea (autores/obras, dados/leis/estudos, fatos históricos, casos concretos).",
+      "explanation_required": true
+    }
+  ],
+
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Tema/Abordagem (aderência; leitura dos motivadores)",
+      "weight": 0.40,
+      "levels": {
+        "0": "Fuga total ao tema OU não realiza a proposta.",
+        "1": "Tangencia o tema; leitura pouco pertinente dos motivadores; foco frágil.",
+        "2": "Compreensão básica; leitura superficial dos motivadores; recorte genérico.",
+        "3": "Boa aderência; dialoga com os motivadores sem colagem; recorte pertinente.",
+        "4": "Aderência plena; problematização consistente; uso crítico dos motivadores.",
+        "5": "Abordagem exemplar; leitura crítica e autônoma dos motivadores; recorte preciso e aprofundado."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Estrutura e Coesão (introdução, desenvolvimento, conclusão; encadeamento)",
+      "weight": 0.30,
+      "levels": {
+        "0": "Sem estrutura reconhecível; fragmentação e contradições.",
+        "1": "Estrutura muito frágil; partes ausentes ou mal definidas; encadeamento precário.",
+        "2": "Estrutura básica (IDC) com lacunas; coesão simples; paragrafação irregular.",
+        "3": "Estrutura adequada; progressão clara; coesão e paragrafação funcionais.",
+        "4": "Estrutura consistente; encadeamento claro entre parágrafos e ideias.",
+        "5": "Estrutura exemplar; progressão, transições e coesão refinadas."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Autoria & Uso crítico da coletânea (posicionamento próprio)",
+      "weight": 0.15,
+      "levels": {
+        "0": "Sem autoria; reprodução/colagem da coletânea ou senso comum.",
+        "1": "Autoria muito limitada; exemplos genéricos; dependência forte dos motivadores.",
+        "2": "Autoria básica; alguma iniciativa própria; repertório pouco verificável.",
+        "3": "Autoria reconhecível; pelo menos um apoio verificável (dado/autor/lei/estudo/caso) relacionado e comentado.",
+        "4": "Autoria consistente; repertório múltiplo/qualificado, integrado ao raciocínio; leitura crítica dos motivadores.",
+        "5": "Autoria destacada; repertório variado e preciso; elaboração crítica sofisticada a partir dos motivadores."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Expressão & Norma-padrão (clareza; correção)",
+      "weight": 0.15,
+      "levels": {
+        "0": "Graves inadequações de registro; múltiplos desvios que comprometem a compreensão.",
+        "1": "Muitos desvios (ortografia, acentuação, concordância, pontuação) e marcas de oralidade.",
+        "2": "Alguns desvios; interferências pontuais na clareza; vocabulário limitado.",
+        "3": "Poucos desvios; registro globalmente adequado; vocabulário apropriado.",
+        "4": "Raros deslizes; boa precisão sintática, ortográfica e lexical.",
+        "5": "Domínio excelente do padrão escrito; clareza, precisão e propriedade estilística."
+      }
+    }
+  ],
+
+  "notes": "Pesos definidos: C1 40%, C2 30%, C3 15%, C4 15%."
+}

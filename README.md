@@ -1,0 +1,1 @@
+# Redação Grader — Starter\n1) Copie .env.local.example para .env.local e preencha OPENAI_API_KEY.\n2) npm install e npm run dev.\n3) Abra http://localhost:3000/tools/redacao e teste.\n

@@ -1,0 +1,80 @@
+{
+  "name": "CSA - 6º Ano - Resenha Crítica",
+  "scale": 100,
+
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total ao tema; não configura o gênero de resenha crítica; cópia extensa de coletânea/outra fonte (mais de 3 linhas).",
+      "explanation_required": true
+    },
+    {
+      "id": "repertorio_obrigatorio_C2",
+      "label": "Exige repertório/observação verificável (C2)",
+      "criterion_ids": ["C2"],
+      "type": "cap_if_no_repertoire",
+      "max_level": 2,
+      "when": "Ausência de referências verificáveis à obra/objeto resenhado (ex.: passagens, cenas, características técnicas), dados contextuais mínimos ou fontes simples além do senso comum.",
+      "explanation_required": true
+    }
+  ],
+
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Apresentação",
+      "weight": 0.08,
+      "levels": {
+        "0": "Margens, espaçamento, rasuras e legibilidade comprometem a leitura.",
+        "1": "Cuidados formais muito irregulares; legibilidade problemática.",
+        "2": "Cuidados básicos; rasuras ou espaçamento ainda irregulares.",
+        "3": "Apresentação geral adequada; legibilidade boa.",
+        "4": "Apresentação caprichada; legibilidade e diagramação consistentes.",
+        "5": "Excelente apresentação: margens, espaçamento, limpeza e legibilidade exemplar."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Adequação à proposta, gênero e tema",
+      "weight": 0.48,
+      "levels": {
+        "0": "Não cumpre a estrutura de resenha crítica; ignora a proposta/tema.",
+        "1": "Cumpre parcialmente a estrutura; título/relevâncias frágeis.",
+        "2": "Estrutura básica (ficha técnica, resumo, opinião) com lacunas; predomínio de senso comum, com pouca referência concreta à obra/objeto resenhado.",
+        "3": "Estrutura adequada; análise crítica inicial pertinente, com menções identificáveis à obra/objeto.",
+        "4": "Estrutura consistente; análises críticas bem escolhidas e ancoradas em elementos observáveis da obra/objeto.",
+        "5": "Estrutura exemplar; análises críticas ricas e bem articuladas ao tema, com referências claras e precisas à obra/objeto."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Coesão e coerência",
+      "weight": 0.24,
+      "levels": {
+        "0": "Ideias desconexas; contradições e ausência de progressão.",
+        "1": "Sequência frágil; conectivos pouco adequados.",
+        "2": "Sequência básica; vocabulário e conectivos funcionais.",
+        "3": "Progressão clara; retomadas e conectivos adequados.",
+        "4": "Coesão consistente; vocabulário variado; ligação clara entre partes.",
+        "5": "Coesão exemplar; progressão e encadeamento muito bem resolvidos."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Adequação às regras da gramática normativa",
+      "weight": 0.2,
+      "levels": {
+        "0": "Inadequações graves de registro e múltiplos desvios.",
+        "1": "Muitos desvios (ortografia, acentuação, concordância, pontuação).",
+        "2": "Alguns desvios; início de frases e convenções às vezes falhos.",
+        "3": "Poucos desvios; registro globalmente adequado.",
+        "4": "Raros deslizes; pontuação e ortografia consistentes.",
+        "5": "Excelente domínio do padrão; registro plenamente adequado."
+      }
+    }
+  ]
+}

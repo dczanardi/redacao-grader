@@ -1,0 +1,80 @@
+{
+  "name": "CSA - 9º Ano - Editorial",
+  "scale": 100,
+
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total ao tema; não configura o gênero editorial; cópia extensa de coletânea/outra fonte (mais de 3 linhas).",
+      "explanation_required": true
+    },
+    {
+      "id": "repertorio_obrigatorio_C2",
+      "label": "Exige repertório verificável (C2)",
+      "criterion_ids": ["C2"],
+      "type": "cap_if_no_repertoire",
+      "max_level": 2,
+      "when": "Ausência de repertório verificável além do senso comum (autores/obras, dados estatísticos, leis, eventos históricos, estudos, casos).",
+      "explanation_required": true
+    }
+  ],
+
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Apresentação",
+      "weight": 0.13,
+      "levels": {
+        "0": "Margens, rasuras, espaçamento e legibilidade comprometem.",
+        "1": "Cuidados formais irregulares; legibilidade problemática.",
+        "2": "Cuidados básicos; alguns problemas pontuais.",
+        "3": "Boa apresentação; legibilidade e limpeza adequadas.",
+        "4": "Apresentação caprichada; diagramação consistente.",
+        "5": "Excelente apresentação: organização e legibilidade exemplar."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Adequação à proposta, gênero e tema",
+      "weight": 0.45,
+      "levels": {
+        "0": "Não configura editorial; ignora proposta/tema.",
+        "1": "Configuração frágil do gênero; estrutura incompleta.",
+        "2": "Estrutura básica (introdução, desenvolvimento, conclusão) com lacunas; predominância de senso comum sem dados/autoridades verificáveis.",
+        "3": "Estrutura adequada; posicionamento claro; ao menos um dado/autoridade/lei/fato verificável relacionado e comentado.",
+        "4": "Estrutura consistente; argumentos sustentados por repertório múltiplo e integrado ao raciocínio.",
+        "5": "Exemplar no gênero; organização e conteúdo muito bem articulados; repertório variado e preciso, articulado com sofisticação."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Coesão e coerência",
+      "weight": 0.24,
+      "levels": {
+        "0": "Sequência ilógica; contradições; ausência de progressão.",
+        "1": "Progressão frágil; conectivos insuficientes.",
+        "2": "Progressão básica; vocabulário funcional.",
+        "3": "Boa progressão; conectivos e retomadas adequados.",
+        "4": "Coesão consistente; encadeamento claro e vocabulário variado.",
+        "5": "Coesão exemplar; encadeamento refinado e muito claro."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Adequação às regras da gramática normativa",
+      "weight": 0.18,
+      "levels": {
+        "0": "Inadequações graves de registro e múltiplos desvios.",
+        "1": "Muitos desvios (ortografia, acentuação, concordância, pontuação).",
+        "2": "Alguns desvios; interferências na clareza.",
+        "3": "Poucos desvios; registro globalmente adequado.",
+        "4": "Raros deslizes; boa precisão sintática e ortográfica.",
+        "5": "Excelente domínio do padrão; registro plenamente adequado."
+      }
+    }
+  ]
+}

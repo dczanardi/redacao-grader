@@ -1,0 +1,93 @@
+{
+  "name": "CSA - 1ª Série - Gêneros Diversos",
+  "scale": 100,
+
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4", "C5"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total ao tema; não configura o gênero solicitado; cópia extensa de coletânea/outra fonte (mais de 3 linhas).",
+      "explanation_required": true
+    },
+    {
+      "id": "repertorio_obrigatorio_C3",
+      "label": "Exige repertório verificável (C3 - Autoria)",
+      "criterion_ids": ["C3"],
+      "type": "cap_if_no_repertoire",
+      "max_level": 2,
+      "when": "Ausência de repertório verificável além do senso comum (autores/obras, dados, conceitos técnicos, eventos históricos, estudos, leis, casos).",
+      "explanation_required": true
+    }
+  ],
+
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Proposta temática",
+      "weight": 0.2,
+      "levels": {
+        "0": "Foge ao tema ou não realiza a(s) tarefa(s) solicitada(s).",
+        "1": "Atende parcialmente à proposta; foco e pertinência frágeis.",
+        "2": "Atende ao tema de modo básico, com eventuais desvios.",
+        "3": "Atende à proposta com boa pertinência e foco geral.",
+        "4": "Atende plenamente à proposta, com consistência e relevância.",
+        "5": "Atende de forma exemplar, explorando com precisão e profundidade o tema."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Gênero textual",
+      "weight": 0.2,
+      "levels": {
+        "0": "Não configura o gênero solicitado.",
+        "1": "Traços do gênero pouco claros ou inconsistentes.",
+        "2": "Configura o gênero de forma básica; alguns desvios estruturais.",
+        "3": "Atende ao gênero com estrutura reconhecível e adequada.",
+        "4": "Domínio consistente do gênero; estrutura e convenções bem aplicadas.",
+        "5": "Exemplar no gênero; escolhas estruturais e discursivas precisas."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Autoria",
+      "weight": 0.2,
+      "levels": {
+        "0": "Sem autoria; reprodução de coletânea/senso comum.",
+        "1": "Autoria muito limitada; ideias previsíveis e genéricas.",
+        "2": "Alguma autoria; ideias próprias simples e pouco articuladas.",
+        "3": "Boa autoria; ideias próprias pertinentes e articuladas; uso inicial de repertório verificável.",
+        "4": "Autoria consistente; repertório relevante além do senso comum, integrado ao raciocínio.",
+        "5": "Autoria destacada; repertório sólido e originalidade argumentativa, articulados com precisão."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Modalidade e norma padrão",
+      "weight": 0.2,
+      "levels": {
+        "0": "Muitos desvios (ortografia, acentuação, concordância, pontuação); prejudica compreensão.",
+        "1": "Erros frequentes; fluidez comprometida.",
+        "2": "Alguns desvios; interferências pontuais na clareza.",
+        "3": "Poucos desvios; boa fluidez e clareza geral.",
+        "4": "Raros deslizes; excelente adequação ao padrão escrito.",
+        "5": "Padrão culto impecável; registro adequado e preciso."
+      }
+    },
+    {
+      "id": "C5",
+      "name": "Coesão e coerência",
+      "weight": 0.2,
+      "levels": {
+        "0": "Progressão e lógica comprometidas; lacunas e contradições.",
+        "1": "Conexões precárias; progressão irregular.",
+        "2": "Articulação básica; alguns saltos ou repetições.",
+        "3": "Boa progressão; conectores e retomadas adequados.",
+        "4": "Coesão consistente; progressão clara e estratégica.",
+        "5": "Coesão exemplar; organização e encadeamento refinados."
+      }
+    }
+  ]
+}
