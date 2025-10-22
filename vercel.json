@@ -1,14 +1,11 @@
 {
   "functions": {
     "app/api/report-pdf/route.ts": {
-      "maxDuration": 90,
-      "includeFiles": [
-        "node_modules/@sparticuz/chromium/bin/**",
-        "node_modules/@sparticuz/chromium/**"
-      ]
+      "maxDuration": 60,
+      "includeFiles": "node_modules/@sparticuz/chromium/bin/**"
     },
     "app/api/grade2/route.ts": {
-      "maxDuration": 90
+      "maxDuration": 60
     }
   }
 }
