@@ -1,7 +1,9 @@
 // @ts-nocheck
 // app/api/grade2/route.ts
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
+export const runtime = "nodejs";          // executa como Serverless Function (não Edge)
+export const dynamic = "force-dynamic";   // nunca pré-render, sempre execução “fresh”
+export const maxDuration = 90;            // limite de tempo (segundos) na Vercel Pro
+export const preferredRegion = "iad1";  // Washington (East), próxima da OpenAI US
 
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
