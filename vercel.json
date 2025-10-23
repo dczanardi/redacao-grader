@@ -1,7 +1,16 @@
 {
   "functions": {
     "app/api/report-pdf/route.ts": {
-      "includeFiles": "node_modules/@sparticuz/chromium/bin/**"
+      "includeFiles": [
+        "node_modules/@sparticuz/chromium/bin/**",
+        "node_modules/@sparticuz/chromium/lib/**"
+      ]
+    },
+    "app/api/report-pdf/route.js": {
+      "includeFiles": [
+        "node_modules/@sparticuz/chromium/bin/**",
+        "node_modules/@sparticuz/chromium/lib/**"
+      ]
     }
   }
 }
