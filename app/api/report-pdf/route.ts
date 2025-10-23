@@ -86,6 +86,8 @@ export async function POST(req: Request) {
        </head><body>${html}</body></html>`,
       { waitUntil: "networkidle0" }
     );
+    const chromium = (await import("@sparticuz/chromium")).default;
+        console.log("[pdf] execPath?", await chromium.executablePath());
 
     // 🔓 ABRE todos os <details> antes de imprimir
     await page.evaluate(() => {
