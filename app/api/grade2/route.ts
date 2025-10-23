@@ -1,9 +1,10 @@
 // @ts-nocheck
 // app/api/grade2/route.ts
-export const runtime = "nodejs";          // executa como Serverless Function (não Edge)
-export const dynamic = "force-dynamic";   // nunca pré-render, sempre execução “fresh”
-export const maxDuration = 90;            // limite de tempo (segundos) na Vercel Pro
-export const preferredRegion = "iad1";  // Washington (East), próxima da OpenAI US
+// app/api/grade2/route.ts
+export const runtime = "nodejs";            // função Node (não edge)
+export const dynamic = "force-dynamic";     // não pré-render
+export const maxDuration = 90;              // Pro permite até 90s
+export const preferredRegion = ["gru1","iad1"]; // SP e fallback na costa leste
 
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
@@ -248,11 +249,32 @@ async function callModelStrict({ rubric, proposalText, proposalImageDataUrl, ess
     response_format: { type: "json_object" }
   };
 
-  const resp = await client.chat.completions.create(req);
-  const txt = S(resp?.choices?.[0]?.message?.content || "");
-  let data: any = null;
-  try { data = JSON.parse(txt); } catch { const m = txt.match(/\{[\s\S]*\}/); if (m) { try { data = JSON.parse(m[0]); } catch {} } }
-  if (!data?.criteria?.length) throw new Error("Falha na avaliação (JSON inválido do modelo).");
+// Tempo-limite interno para não encostar nos 90s da Vercel
+const KILL_AFTER_MS = 70_000;
+
+const resp = await Promise.race([
+  // sua chamada atual ao modelo
+  client.chat.completions.create(req),
+
+  // “bomba-relógio” que estoura após 70s
+  new Promise<never>((_, reject) =>
+    setTimeout(() => reject(new Error("TIMEOUT_70S")), KILL_AFTER_MS)
+  ),
+]);
+
+const txt = S((resp as any)?.choices?.[0]?.message?.content || "");
+let data: any = null;
+try {
+  data = JSON.parse(txt);
+} catch {
+  const m = txt.match(/\{[\s\S]*\}/);
+  if (m) {
+    try { data = JSON.parse(m[0]); } catch {}
+  }
+}
+if (!data?.criteria?.length)
+  throw new Error("Falha na avaliação (JSON inválido do modelo).");
+
 
   data.criteria.sort((a:any,b:any)=> S(a.id).localeCompare(S(b.id), "pt-BR", {numeric:true}));
   data.criteria = data.criteria.map((c:any)=>({
