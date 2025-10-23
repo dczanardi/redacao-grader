@@ -1,15 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  trailingSlash: false,
-
-  // Important: no redirects/rewrites to avoid loops right now
-  async redirects() {
-    return [];
-  },
-  async rewrites() {
-    return [];
-  },
+  // ...o que já existe aí...
+  experimental: {
+    // mantenha outras chaves que você já tenha aqui
+    outputFileTracingIncludes: {
+      "app/api/report-pdf/route.ts": [
+        "./node_modules/@sparticuz/chromium/bin/**"
+      ]
+    }
+  }
 };
 
 export default nextConfig;
