@@ -61,8 +61,29 @@ async function launchBrowser() {
   });
 }
 
-export async function GET() {
-  return NextResponse.json({ ok: true, ping: "report-pdf" });
+export async function GET(req: Request) {
+  try {
+    const url = new URL(req.url);
+    if (url.searchParams.get("diag") === "1") {
+      const chromium = (await import("@sparticuz/chromium")).default;
+      const fs = await import("node:fs/promises");
+      const path = await chromium.executablePath();
+      let exists = false;
+      try { await fs.stat(path); exists = true; } catch {}
+
+      return NextResponse.json({
+        ok: true,
+        chromiumExecutablePath: path,
+        executableExists: exists,
+        brotliBinaryPath: process.env.BROTLI_BINARY_PATH || null,
+        node: process.version,
+        region: process.env.VERCEL_REGION || null
+      });
+    }
+    return NextResponse.json({ ok: true, ping: "report-pdf" });
+  } catch (e:any) {
+    return NextResponse.json({ ok:false, err: e?.message }, { status: 500 });
+  }
 }
 
 export async function POST(req: Request) {
