@@ -1,16 +1,10 @@
 {
   "functions": {
     "app/api/report-pdf/route.ts": {
-      "includeFiles": [
-        "node_modules/@sparticuz/chromium/bin/**",
-        "node_modules/@sparticuz/chromium/lib/**"
-      ]
-    },
-    "app/api/report-pdf/route.js": {
-      "includeFiles": [
-        "node_modules/@sparticuz/chromium/bin/**",
-        "node_modules/@sparticuz/chromium/lib/**"
-      ]
+      "runtime": "nodejs18.x",
+      "maxDuration": 120,
+      "memory": 1024,
+      "includeFiles": "node_modules/@sparticuz/chromium/**"
     }
   }
 }
