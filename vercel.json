@@ -1,13 +1,11 @@
 {
-  "version": 2,
   "functions": {
     "app/api/report-pdf/route.ts": {
-      "includeFiles": [
-        "node_modules/@sparticuz/chromium/bin/**",
-        "node_modules/@sparticuz/chromium/lib/**"
-      ],
-      "runtime": "nodejs20.x",
+      "includeFiles": "{node_modules/@sparticuz/chromium/bin/**,node_modules/@sparticuz/chromium/lib/**}",
       "maxDuration": 300
+    },
+    "app/api/grade2/route.ts": {
+      "maxDuration": 180
     }
   }
 }
