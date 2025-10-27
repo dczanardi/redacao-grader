@@ -1,7 +1,7 @@
 {
   "functions": {
     "app/api/report-pdf/route.ts": {
-      "includeFiles": "{node_modules/@sparticuz/chromium/bin/**,node_modules/@sparticuz/chromium/lib/**}",
+      "includeFiles": "node_modules/@sparticuz/chromium/**",
       "maxDuration": 300
     },
     "app/api/grade2/route.ts": {
