@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ...o que já existe aí...
   experimental: {
-    // mantenha outras chaves que você já tenha aqui
+    // 1) Não deixe de preservar outras chaves que você já possa ter aqui.
+    // 2) Garanta que este pacote NÃO seja tree-shakeado pelo Next:
+    serverComponentsExternalPackages: ['@sparticuz/chromium'],
+
+    // 3) (extra/seguro) Inclua também os diretórios do chromium no trace:
     outputFileTracingIncludes: {
-      "app/api/report-pdf/route.ts": [
-        "./node_modules/@sparticuz/chromium/bin/**"
+      'app/api/report-pdf/route.ts': [
+        './node_modules/@sparticuz/chromium/bin/**',
+        './node_modules/@sparticuz/chromium/lib/**'
       ]
     }
   }
