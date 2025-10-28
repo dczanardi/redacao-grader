@@ -1,9 +1,11 @@
 // @ts-nocheck
 // app/api/grade2/route.ts
 // app/api/grade2/route.ts
+
+
 export const runtime = "nodejs";            // função Node (não edge)
 export const dynamic = "force-dynamic";     // não pré-render
-export const maxDuration = 90;              // Pro permite até 90s
+export const maxDuration = 300;              // Pro permite até 90s
 export const preferredRegion = ["gru1","iad1"]; // SP e fallback na costa leste
 
 import { NextResponse } from "next/server";
@@ -249,18 +251,35 @@ async function callModelStrict({ rubric, proposalText, proposalImageDataUrl, ess
     response_format: { type: "json_object" }
   };
 
-// Tempo-limite interno para não encostar nos 90s da Vercel
-const KILL_AFTER_MS = 70_000;
+// ---- TIMEOUT DE SEGURANÇA (4 min) ----
+// Mantém a mesma lógica de Promise.race, só que com 240s
+const TIMEOUT_MS = 240_000; // 4 minutos
 
-const resp = await Promise.race([
-  // sua chamada atual ao modelo
+function withTimeout<T>(p: Promise<T>, ms: number, label: string) {
+  let timer: any;
+  const timeout = new Promise<never>((_, reject) => {
+    timer = setTimeout(() => reject(new Error(label)), ms);
+  });
+  return {
+    race: Promise.race([p, timeout]) as Promise<T>,
+    cancel: () => clearTimeout(timer),
+  };
+}
+
+// corre a chamada do modelo com timeout de 240s
+const { race, cancel } = withTimeout(
   client.chat.completions.create(req),
+  TIMEOUT_MS,
+  "TIMEOUT_240S"
+);
 
-  // “bomba-relógio” que estoura após 70s
-  new Promise<never>((_, reject) =>
-    setTimeout(() => reject(new Error("TIMEOUT_70S")), KILL_AFTER_MS)
-  ),
-]);
+let resp: any;
+try {
+  resp = await race;
+} finally {
+  // garante que o timer não “exploda” depois que já respondeu
+  cancel();
+}
 
 const txt = S((resp as any)?.choices?.[0]?.message?.content || "");
 let data: any = null;
