@@ -2,7 +2,6 @@
 // app/api/grade2/route.ts
 // app/api/grade2/route.ts
 
-
 export const runtime = "nodejs";            // função Node (não edge)
 export const dynamic = "force-dynamic";     // não pré-render
 export const maxDuration = 300;              // Pro permite até 90s

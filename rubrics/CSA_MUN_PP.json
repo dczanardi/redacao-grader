@@ -1,0 +1,86 @@
+{
+  "name": "CSA_MUN_PP — Position Paper (CSAMUN)",
+  "scale": "0-5",
+  "weights_total": 1.0,
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Antecedentes do Tópico",
+      "weight": 0.25,
+      "levels": {
+        "0": "Análise precária/superficial ou incorreta; falhas graves na identificação dos elementos principais e suas raízes.",
+        "1": "Análise superficial; identifica alguns elementos, mas sem profundidade nem raízes claras.",
+        "2": "Análise parcial/adequada do essencial; identifica elementos e raízes, porém sem conexões profundas.",
+        "3": "Análise clara e detalhada dos elementos principais e suas raízes; boa compreensão do contexto.",
+        "4": "Análise consistente, conectando elementos, raízes e contexto com verossimilhança interna.",
+        "5": "Análise abrangente e profunda dos antecedentes e textos de apoio; conexões precisas e reflexões contextuais complexas."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Posição Assumida pela Delegação",
+      "weight": 0.25,
+      "levels": {
+        "0": "Posição vaga ou incoerente; falhas na articulação de interesses e políticas.",
+        "1": "Posição parcialmente clara; faltam detalhes sobre interesses/políticas; coerência limitada.",
+        "2": "Posição clara e coerente, com interesses delineados, porém sem articulação mais profunda.",
+        "3": "Posição clara, detalhada e alinhada a interesses políticos/sociais/econômicos; boa articulação com outros atores.",
+        "4": "Articulação consistente dos interesses e alinhamentos; boa profundidade e coerência.",
+        "5": "Articulação excepcional, profunda e coerente; demonstra domínio de políticas nacionais e relações diplomáticas."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Soluções Propostas",
+      "weight": 0.20,
+      "levels": {
+        "0": "Soluções vagas, irrealistas ou ausentes.",
+        "1": "Soluções superficiais/pouco desenvolvidas; faltam detalhes e clareza, ainda que possam ser viáveis.",
+        "2": "Soluções claras e razoáveis, mas sem explorar todas as dimensões/alianças possíveis.",
+        "3": "Soluções bem articuladas e viáveis; consideram aspectos políticos/econômicos/sociais e apoios/oposições.",
+        "4": "Soluções estratégicas e consistentes, com boa leitura das dinâmicas diplomáticas.",
+        "5": "Soluções criativas, estratégicas e exequíveis; demonstram entendimento profundo das dinâmicas e das alianças/oposições."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Clareza e Objetividade do Texto",
+      "weight": 0.10,
+      "levels": {
+        "0": "Texto confuso, pouco claro; ideias mal articuladas.",
+        "1": "Alguma clareza, mas com repetições ou pouca objetividade.",
+        "2": "Predominantemente claro e direto, com pequenas falhas de objetividade/estrutura.",
+        "3": "Claro, objetivo e bem organizado; ideias expressas de forma eficaz.",
+        "4": "Muito claro, objetivo e bem estruturado.",
+        "5": "Excepcionalmente claro, conciso e direto; comunica ideias com precisão e eficácia."
+      }
+    },
+    {
+      "id": "C5",
+      "name": "Correção Gramatical",
+      "weight": 0.10,
+      "levels": {
+        "0": "Erros frequentes que comprometem a compreensão.",
+        "1": "Vários erros que prejudicam a clareza e formalidade.",
+        "2": "Alguns erros, mas texto majoritariamente correto e compreensível.",
+        "3": "Poucos erros; uso adequado da norma culta.",
+        "4": "Raros erros; linguagem formal e precisa.",
+        "5": "Impecável, sem erros gramaticais/ortográficos; linguagem formal e precisa."
+      }
+    },
+    {
+      "id": "C6",
+      "name": "Formatação segundo as Normas ABNT",
+      "weight": 0.10,
+      "levels": {
+        "0": "Não segue as normas; falhas graves (estrutura/citações).",
+        "1": "Segue parcialmente; erros importantes de formatação e referências.",
+        "2": "Cumpre a maior parte das normas; desvios mínimos.",
+        "3": "Quase perfeito segundo as normas; pequenas correções possíveis.",
+        "4": "Muito bem formatado; atende praticamente todas as exigências.",
+        "5": "Rigorosamente conforme as normas ABNT; formatação, citações e referências impecáveis."
+      }
+    }
+  ],
+  "notes": "Rubrica de Position Paper (0–10 pontos totais) com pesos: C1 25%, C2 25%, C3 20%, C4 10%, C5 10%, C6 10%."
+}
