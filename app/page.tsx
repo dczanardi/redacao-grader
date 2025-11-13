@@ -1,9 +1,11 @@
 // app/page.tsx
 import Link from "next/link";
+import InstructionsPanel from "../components/InstructionsPanel";
 
 export default function Home() {
   return (
     <main style={{ maxWidth: 880, margin: "40px auto", padding: 16 }}>
+      <InstructionsPanel transcriberUrl=" https://chatgpt.com/g/g-68cdaa126d30819183fba7761fcd2aa8-transcricao-de-redacao " />
       <h1 style={{ marginBottom: 8 }}>Correção de Redação</h1>
       <p style={{ color: "#444", marginTop: 0 }}>
         Escolha uma das opções abaixo para começar:
