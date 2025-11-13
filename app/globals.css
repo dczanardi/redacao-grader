@@ -1,2 +1,10 @@
 html,body{margin:0;padding:0}
 *{box-sizing:border-box}
+/* --- ocultar qualquer botão/link de PDF da plataforma --- */
+a[href*="/api/report-pdf"],
+button#btn-pdf,
+[data-role="download-pdf"],
+[data-action="pdf"] {
+  display: none !important;
+  visibility: hidden !important;
+}
