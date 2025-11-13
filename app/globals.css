@@ -1,6 +1,84 @@
-html,body{margin:0;padding:0}
-*{box-sizing:border-box}
-/* --- ocultar qualquer botão/link de PDF da plataforma --- */
+/* ===== Tema e resets ===== */
+:root {
+  /* Cores pedidas */
+  --app-bg: #F0F8FF;   /* Fundo da página */
+  --brand:  #2F4F4F;   /* Acento (botões/destaques) */
+  --ink:    #000000;   /* Texto principal */
+  --muted:  #696969;   /* Texto secundário */
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--app-bg) !important;
+  color: var(--ink);
+  font: 15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+/* ===== Tipografia básica ===== */
+h1,h2,h3,h4,h5,h6 { color: var(--ink); margin: 0.6em 0 0.35em; }
+p,li { color: var(--ink); }
+.small, .muted, small { color: var(--muted); }
+
+/* ===== Botões e links “de ação” com a cor de acento ===== */
+button,
+.btn,
+[type="submit"],
+a.button,
+a.btn-primary {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: filter .15s ease, transform .02s ease;
+}
+
+button:hover,
+.btn:hover,
+[type="submit"]:hover,
+a.button:hover,
+a.btn-primary:hover {
+  filter: brightness(1.06);
+}
+
+button:active,
+.btn:active,
+[type="submit"]:active,
+a.button:active,
+a.btn-primary:active {
+  transform: translateY(1px);
+}
+
+button:disabled,
+.btn:disabled,
+[type="submit"]:disabled,
+a.button[aria-disabled="true"] {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* Links comuns */
+a { color: var(--brand); }
+a:hover { text-decoration: underline; }
+
+/* Cartões/caixas (se sua UI usar) */
+.card, .panel, .box {
+  background: #fff;
+  border: 1px solid #e7e7ea;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* ===== Esconder botão/ação de PDF (instável) ===== */
 a[href*="/api/report-pdf"],
 button#btn-pdf,
 [data-role="download-pdf"],
