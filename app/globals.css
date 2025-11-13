@@ -86,3 +86,32 @@ button#btn-pdf,
   display: none !important;
   visibility: hidden !important;
 }
+/* === Layout responsivo de 1→2 colunas para a página principal === */
+.main-grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* Em telas grandes, vira 2 colunas (inputs à esquerda, resultado à direita) */
+@media (min-width: 980px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Caixas padrão (já herdam seu tema) */
+.panel {
+  background: #fff;
+  border: 1px solid #e7e7ea;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+/* Uma barra de ações (se você quiser alinhar botões) */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
