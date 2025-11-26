@@ -1,5 +1,6 @@
 {
   "items": [
+    { "id": "CSA-8o-ANO-NOVO",                 "file": "CSA-8o-ANO-NOVO" },
     { "id": "CSA_MUN_PP",                      "file": "CSA_MUN_PP.json" },
     { "id": "CSA-2a-Serie-Dissertacao",        "file": "CSA-2a-Serie-Dissertacao.json" },
     { "id": "CSA-3a-Serie-Dissertacao-v2",     "file": "CSA-2a-Serie-Dissertacao.json" },
@@ -19,4 +20,4 @@
     { "id": "SANTA_CASA_VUNESP",               "file": "SANTA_CASA_VUNESP.json" },
     { "id": "EINSTEIN_VUNESP",                 "file": "EINSTEIN_VUNESP.json" }
   ]
-}
+} 

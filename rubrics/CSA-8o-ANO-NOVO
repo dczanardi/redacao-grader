@@ -1,0 +1,55 @@
+{
+  "name": "CSA - 8º Ano - Texto de opinião (novo)",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Adequação à proposta, gênero textual e tema",
+      "weight": 0.4,
+      "levels": {
+        "0": "Não constitui texto de opinião OU foge totalmente ao tema/proposta. Sugestão de melhoria: releia com atenção o enunciado, sublinhe as palavras-chave e planeje um texto que realmente defenda um ponto de vista sobre o tema proposto.",
+        "1": "Atendimento muito parcial: tema pouco claro, parágrafos sem função definida, ausência de tese explícita ou ponto de vista identificável. Sugestão de melhoria: comece sua introdução apresentando o tema e escrevendo uma frase que mostre claramente qual é a sua opinião.",
+        "2": "Compreensão básica do tema; texto com alguns traços de opinião, mas ainda pouco adequado ao gênero (mistura com outros tipos de texto) e com problemas na divisão em introdução, desenvolvimento e conclusão. Sugestão de melhoria: antes de escrever, faça um pequeno rascunho com três partes: introdução (tema + opinião), dois parágrafos de argumento e uma conclusão retomando a tese.",
+        "3": "Boa adequação ao gênero e ao tema: texto apresenta introdução com apresentação do tema, tese ou opinião identificável, desenvolvimento com pelo menos um argumento e conclusão relacionada ao que foi defendido. Sugestão de melhoria: procure diversificar um pouco mais os tipos de argumento (exemplos, explicações, comparações) para fortalecer a defesa da sua opinião.",
+        "4": "Adequação plena: texto de opinião bem caracterizado, com tema e tese claros, argumentos distribuídos nos parágrafos de desenvolvimento, sem grandes desvios de foco, e conclusão que retoma e reafirma o ponto de vista. Sugestão de melhoria: refine ainda mais o planejamento, evitando repetições desnecessárias e acrescentando detalhes que tornem a tese mais original.",
+        "5": "Adequação exemplar: texto de opinião muito bem planejado, com tema e tese precisos, desenvolvimento equilibrado (argumentos não repetitivos e bem distribuídos) e conclusão que retoma, sintetiza e, quando possível, amplia o ponto de vista de forma coerente. Sugestão de melhoria: mantenha esse padrão, revisando apenas para pequenos ajustes de estilo e buscando, quando possível, trazer perspectivas ainda mais autorais."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Coesão e coerência",
+      "weight": 0.3,
+      "levels": {
+        "0": "Argumentação confusa, contraditória ou desconexa; ideias sem relação clara entre si; difícil de compreender o que o autor defende. Sugestão de melhoria: reorganize as ideias em ordem lógica (do mais geral ao mais específico) e use conectivos simples como 'primeiramente', 'além disso' e 'por fim'.",
+        "1": "Sequência de ideias frágil, com repetições excessivas, uso muito limitado ou inadequado de conectivos; há quebras frequentes na linha de raciocínio. Sugestão de melhoria: ao revisar, sublinhe os conectivos e troque repetições por expressões variadas que indiquem causa, consequência, comparação ou oposição.",
+        "2": "Encadeamento simples: há alguma progressão, mas com repetições, saltos de sentido ou parágrafos que não se conectam bem à tese. Sugestão de melhoria: no início de cada parágrafo de desenvolvimento, escreva uma frase-tópico que mostre qual argumento será tratado e como ele reforça a tese.",
+        "3": "Boa coesão: argumentos relacionados entre si, uso de conectivos adequados (porque, portanto, além disso, por outro lado, etc.), vocabulário suficiente para evitar muitas repetições. Sugestão de melhoria: experimente variar mais os conectivos e revisar se cada parágrafo realmente acrescenta algo novo ao raciocínio.",
+        "4": "Coesão consistente: seleção e organização claras das informações, uso variado de conectivos e recursos de coesão, parágrafos bem articulados e sem contradições importantes. Sugestão de melhoria: revise buscando eliminar pequenas repetições e ajustar trechos que possam ficar ainda mais objetivos.",
+        "5": "Coesão e coerência exemplares: progressão natural das ideias, relações lógicas muito claras (causa, consequência, comparação, oposição), vocabulário variado e preciso, conectivos usados com diversidade e propriedade. Sugestão de melhoria: mantenha o padrão, apenas relendo para garantir que não haja ambiguidade e que o texto esteja fluindo com naturalidade."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Adequação às regras da gramática normativa",
+      "weight": 0.3,
+      "levels": {
+        "0": "Muitos erros graves de gramática, ortografia, pontuação ou sintaxe, que comprometem a compreensão do texto em vários trechos. Sugestão de melhoria: escreva frases mais curtas e faça uma revisão focada em acentuação, pontuação básica e separação das palavras.",
+        "1": "Diversos erros de gramática e ortografia; pontuação muito problemática; linguagem muito informal para a situação de produção; compreensão prejudicada em vários pontos. Sugestão de melhoria: após escrever, leia o texto em voz alta, marcando as pausas com vírgulas e pontos, e corrija palavras que não estejam de acordo com a norma-padrão.",
+        "2": "Padrão mediano: há erros recorrentes de gramática, ortografia ou pontuação, mas o texto ainda é compreensível; alterna trechos mais corretos com outros mais problemáticos. Sugestão de melhoria: escolha um parágrafo para revisar com calma, corrigindo verbos, concordância e acentuação; depois aplique o mesmo cuidado aos demais.",
+        "3": "Boa correção: alguns deslizes, porém não sistemáticos; ortografia e concordância em geral adequadas; linguagem compatível com o gênero e com o contexto escolar. Sugestão de melhoria: use o dicionário (ou corretor) para conferir palavras de que você ainda tem dúvida e revise especialmente a pontuação de períodos mais longos.",
+        "4": "Domínio consistente: poucos erros, em geral de distração; boa pontuação, estrutura sintática adequada e vocabulário relativamente variado. Sugestão de melhoria: revise buscando eliminar os erros de distração e experimentar vocabulário um pouco mais preciso e variado.",
+        "5": "Domínio excelente da norma-padrão: raros ou nenhum deslize; ortografia, acentuação, concordância, regência, pontuação e sintaxe muito bem controladas, com vocabulário preciso. Sugestão de melhoria: mantenha o padrão, apenas relendo o texto final para garantir que todos os detalhes (acentos, vírgulas, letras maiúsculas) estejam corretos."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; tema ou gênero completamente diferentes do solicitado (não configura texto de opinião sobre a proposta dada); elementos claramente não relacionados ao tema; cópia de mais de três linhas de textos de apoio ou de outra fonte.",
+      "explanation_required": true
+    }
+  ]
+}
