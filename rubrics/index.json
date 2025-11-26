@@ -1,23 +1,10 @@
 {
   "items": [
-    { "id": "CSA-8o-ANO-NOVO",                 "file": "CSA-8o-ANO-NOVO" },
     { "id": "CSA_MUN_PP",                      "file": "CSA_MUN_PP.json" },
+    { "id": "CSA-1a-Serie-Generos-Diversos",   "file": "CSA-1a-Serie-Generos-Diversos.json" }, 
     { "id": "CSA-2a-Serie-Dissertacao",        "file": "CSA-2a-Serie-Dissertacao.json" },
     { "id": "CSA-3a-Serie-Dissertacao-v2",     "file": "CSA-2a-Serie-Dissertacao.json" },
-    { "id": "CSA-1a-Serie-Generos-Diversos",   "file": "CSA-1a-Serie-Generos-Diversos.json" },
-    { "id": "CSA-6o-Ano-Resenha-Critica",      "file": "CSA-6o-Ano-Resenha-Critica.json" },
-    { "id": "CSA-7o-Ano-Texto-Teatral",        "file": "CSA-7o-Ano-Texto-Teatral.json" },
-    { "id": "CSA-8o-Ano-Conto-Fantastico",     "file": "CSA-8o-Ano-Conto-Fantastico.json" },
-    { "id": "CSA-9o-Ano-Editorial",            "file": "CSA-9o-Ano-Editorial.json" },
-    { "id": "FUVEST",                          "file": "FUVEST.json" },
-    { "id": "ENEM",                            "file": "ENEM.json" },
-    { "id": "UNICAMP",                         "file": "UNICAMP.json" },
-    { "id": "UNESP",                           "file": "UNESP.json" },
-    { "id": "INSPER",                          "file": "INSPER.json" },
-    { "id": "MACKENZIE",                       "file": "MACKENZIE.json" },
-    { "id": "PUC_SP",                          "file": "PUC_SP.json" },
-    { "id": "FGV",                             "file": "FGV.json" },
-    { "id": "SANTA_CASA_VUNESP",               "file": "SANTA_CASA_VUNESP.json" },
-    { "id": "EINSTEIN_VUNESP",                 "file": "EINSTEIN_VUNESP.json" }
+    { "id": "CSA-8o-ANO-NOVO",                 "file": "CSA-8o-ANO-NOVO" }
+      
   ]
 } 
