@@ -1,0 +1,68 @@
+{
+  "name": "CSA - 6º Ano - Notícia (novo)",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Apresentação do texto (margens, parágrafos, rasuras e letra)",
+      "weight": 0.08,
+      "levels": {
+        "0": "Apresentação muito inadequada: não respeita margens, não há espaçamento regular de parágrafos, há muitas rasuras e letra pouco legível, dificultando a leitura. Sugestão de melhoria: reescreva com calma, planejando o espaço da folha, marcando margens e parágrafos e treinando uma letra mais legível.",
+        "1": "Apresentação frágil: há vários problemas de margens, parágrafos irregulares, muitas rasuras ou trechos pouco legíveis, mas ainda é possível acompanhar o texto com esforço. Sugestão de melhoria: revise o rascunho antes de passar a limpo, apagando rasuras desnecessárias e cuidando do alinhamento das linhas.",
+        "2": "Apresentação parcial: respeita alguns aspectos (margens, parágrafos ou legibilidade), mas há falhas visíveis em outros, como excesso de rasuras ou começo irregular de parágrafos. Sugestão de melhoria: escolha um critério de cada vez (margem, parágrafo, rasuras, letra) e treine conscientemente em cada nova produção.",
+        "3": "Boa apresentação: margens e parágrafos geralmente adequados, poucas rasuras e letra legível, com pequenos deslizes que não prejudicam a leitura. Sugestão de melhoria: mantenha o cuidado já adquirido e tente reduzir ainda mais rasuras e pequenos desvios de alinhamento.",
+        "4": "Apresentação bem cuidada: texto visualmente organizado, margens e parágrafos regulares, raras rasuras e letra clara em quase todo o texto. Sugestão de melhoria: continue mantendo esse padrão e observe se há detalhes gráficos (título, subtítulo, recuos) que possam deixar a notícia ainda mais profissional.",
+        "5": "Apresentação exemplar: margens e parágrafos muito bem marcados, praticamente sem rasuras e letra totalmente legível. O texto causa ótima impressão visual. Sugestão de melhoria: mantenha esse padrão de capricho e use-o como modelo para outras produções escritas."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Adequação à proposta, gênero notícia e tema",
+      "weight": 0.40,
+      "levels": {
+        "0": "Não atende à proposta: não configura notícia de passeio escolar OU foge totalmente ao tema (fato central não aparece). Título/subtítulo, lead, corpo ou desfecho não cumprem a função básica. Sugestão de melhoria: releia a proposta, destaque o fato principal do passeio e reorganize o texto seguindo a estrutura de notícia (título, subtítulo, lead e parágrafos de desenvolvimento).",
+        "1": "Atende muito pouco à proposta: estrutura de notícia incompleta ou mal organizada; o fato central aparece de forma confusa; título e subtítulo pouco claros; lead com vários elementos ausentes; corpos e desfecho pouco relacionados ao passeio. Sugestão de melhoria: liste, antes de escrever, quem, o quê, quando, onde e por quê/para quê; em seguida, distribua essas informações nos parágrafos corretos.",
+        "2": "Adequação parcial: o texto é reconhecível como notícia, mas apresenta problemas importantes: título/subtítulo não antecipam bem o fato, lead com lacunas, parágrafos que não desenvolvem suficientemente o passeio e/ou desfecho pouco claro. Sugestão de melhoria: revise cada parte da notícia perguntando se ela realmente ajuda o leitor a entender o passeio e o objetivo pedagógico.",
+        "3": "Boa adequação: configura notícia de passeio escolar; título e subtítulo razoavelmente claros; lead com a maior parte dos elementos; parágrafos de corpo e desfecho relatam o passeio com algumas pequenas falhas de completude ou precisão. Sugestão de melhoria: detalhe um pouco mais as atividades e cuide para que os verbos estejam no tempo e na pessoa pedida (geralmente passado e 3ª pessoa).",
+        "4": "Adequação consistente: texto claramente organizado como notícia; título/subtítulo antecipam bem o fato central; lead completo ou com pequenas lacunas; corpo e desfecho desenvolvem de forma articulada o passeio e seu objetivo pedagógico. Sugestão de melhoria: refine detalhes (dados, impressões, citações indiretas) para tornar a notícia mais informativa e interessante.",
+        "5": "Adequação exemplar: notícia muito bem construída sobre o passeio, com título e subtítulo claros, lead completo (quem, o quê, quando, onde e por quê/para quê), desenvolvimento bem distribuído pelos parágrafos e desfecho que retoma impressões e sentido educativo. Sugestão de melhoria: mantenha esse padrão e experimente pequenas escolhas de estilo (variação de verbos, detalhes significativos) para enriquecer o texto."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Coesão e coerência",
+      "weight": 0.32,
+      "levels": {
+        "0": "Coesão e coerência muito comprometidas: o leitor tem dificuldade de entender a sequência dos fatos; há contradições entre lead e corpo; ideias desconexas entre e dentro dos parágrafos; quase não há conectivos. Sugestão de melhoria: reescreva organizando os fatos em ordem lógica e use conectivos básicos (depois, em seguida, por isso, além disso) para ligar as frases.",
+        "1": "Coesão e coerência frágeis: o texto apresenta alguns trechos compreensíveis, mas há quebras frequentes na sequência, repetições excessivas de palavras e parágrafos pouco relacionados ao lead. Sugestão de melhoria: releia cada parágrafo perguntando se ele realmente continua a informação anterior e se dialoga com o lead.",
+        "2": "Coesão e coerência parciais: em boa parte do texto há sentido, mas um ou mais parágrafos trazem ideias vagas, mal conectadas ou com repetições incômodas; uso irregular de conectivos e pronomes. Sugestão de melhoria: substitua repetições por sinônimos ou pronomes e revise o uso de conectivos para clarear as relações de causa, sequência ou contraste.",
+        "3": "Boa coesão e coerência: parágrafos em geral bem relacionados ao lead; ideias compreensíveis em quase todo o texto; conectivos presentes, ainda que pouco variados; algumas repetições não chegam a prejudicar a leitura. Sugestão de melhoria: varie mais o vocabulário e utilize conectivos mais precisos para marcar tempo, causa, consequência e oposição.",
+        "4": "Coesão e coerência consistentes: sequência lógica entre lead, corpos e desfecho; parágrafos claros internamente; uso adequado de pronomes, sinônimos e conectivos, com raros deslizes. Sugestão de melhoria: refine o encadeamento, buscando transições mais naturais entre parágrafos e evitando qualquer repetição desnecessária.",
+        "5": "Coesão e coerência exemplares: texto muito bem articulado, sem contradições; cada parágrafo desenvolve o anterior; pronomes, sinônimos e conectivos variados garantem fluidez e clareza. Sugestão de melhoria: mantenha esse padrão e use-o como referência para outras produções em que a organização das ideias seja essencial."
+      }
+    },
+    {
+      "id": "C4",
+      "name": "Linguagem e regras da gramática normativa",
+      "weight": 0.20,
+      "levels": {
+        "0": "Linguagem e gramática muito inadequadas: muitos problemas de ortografia, acentuação, concordância e pontuação; uso frequente de gírias, abreviações ou termos inadequados ao gênero notícia. Sugestão de melhoria: revise com apoio de gramática ou professor, marcando os principais erros e reescrevendo as frases mais problemáticas.",
+        "1": "Linguagem e gramática frágeis: vários desvios de ortografia/acentuação, concordâncias básicas e pontuação; registro pouco adequado, com mais de duas ocorrências de linguagem informal. Sugestão de melhoria: concentre-se primeiro em reduzir gírias e abreviações e, depois, revise as frases em voz alta para ajustar concordâncias e pausas.",
+        "2": "Linguagem parcialmente adequada: há trechos corretos, mas o texto apresenta quantidade significativa de desvios (ortografia, acentuação, maiúsculas, concordâncias e pontuação) que chamam atenção do leitor. Sugestão de melhoria: após escrever, faça uma “varredura” específica procurando apenas um tipo de erro por vez (por exemplo, só acentos, depois só concordância).",
+        "3": "Boa adequação linguística: linguagem em geral apropriada ao gênero notícia; alguns desvios de ortografia, concordância ou pontuação, mas que não comprometem a compreensão. Sugestão de melhoria: revise com calma antes de entregar, marcando as palavras que você tem dúvida e conferindo em dicionário ou com o professor.",
+        "4": "Domínio consistente da norma: poucos erros de ortografia, acentuação, concordância e pontuação; registro formal adequado, sem gírias ou abreviações relevantes. Sugestão de melhoria: busque ampliar o repertório lexical (sinônimos mais precisos) e cuidar de detalhes de pontuação para deixar o texto mais elegante.",
+        "5": "Domínio exemplar da linguagem: uso muito seguro da norma-padrão em ortografia, acentuação, concordância e pontuação; registro plenamente adequado ao gênero notícia. Sugestão de melhoria: mantenha esse padrão e desafie-se a usar recursos estilísticos simples (orações bem pontuadas, vocabulário mais variado) sem perder a clareza."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3", "C4"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; não constitui notícia de passeio escolar; fuga total ao tema; cópia de mais de três linhas da proposta ou de outra fonte.",
+      "explanation_required": true
+    }
+  ]
+}
