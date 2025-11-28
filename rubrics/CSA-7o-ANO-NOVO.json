@@ -1,0 +1,55 @@
+{
+  "name": "CSA - 7º Ano - Carta de reclamação (novo)",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Adequação à proposta temática, gênero textual e tema",
+      "weight": 0.60,
+      "levels": {
+        "0": "Não atende ao gênero carta de reclamação OU não aborda a situação solicitada. Falta motivo claro de reclamação; não descreve os problemas; não solicita providências; pode apresentar tom agressivo ou inadequado. Sugestão de melhoria: releia com atenção o enunciado, identifique tema, destinatário e objetivo da carta; planeje uma reclamação completa (motivo, descrição do problema, pedido de providências e sugestões) mantendo tom respeitoso.",
+        "1": "Atendimento muito parcial à proposta: cumpre apenas algumas tarefas do gênero (por exemplo, descreve o problema, mas não solicita providências ou não conclui adequadamente); motivo pouco claro; descrição de problemas pouco organizada; pedidos vagos ou pouco plausíveis; pode oscilar no tom de cortesia. Sugestão de melhoria: marque, no rascunho, cada etapa da carta (apresentação, exposição do problema, argumentos, pedido de providências, sugestões e despedida) e certifique-se de contemplar todas; revise o tom para mantê-lo educado.",
+        "2": "Atende de forma básica à proposta: a carta apresenta o motivo da reclamação e parte dos elementos esperados (descrição de problemas, algum pedido de providência), mas com pouca organização ou desenvolvimento; argumentos concretos ainda superficiais; pedidos às vezes genéricos; pode faltar clareza nas sugestões de mudança. Sugestão de melhoria: detalhe melhor o que aconteceu (quando, onde, com quem), adicione exemplos concretos e explicite o que você espera que a empresa/serviço faça para resolver o problema.",
+        "3": "Boa adequação: carta de reclamação reconhecível, com motivo exposto, descrição organizada dos principais problemas, alguns argumentos concretos, pedidos de providência coerentes e sugestões de mudança plausíveis; tom em geral diplomático e respeitoso, com foco na situação solicitada. Sugestão de melhoria: refine o plano de texto (ordem dos parágrafos), aprofunde um pouco mais os argumentos e torne os pedidos ainda mais objetivos e específicos.",
+        "4": "Adequação plena: carta bem caracterizada, cumpre todas as etapas do gênero (apresentação, exposição clara do problema, argumentos concretos, pedidos plausíveis, sugestões viáveis e encerramento cortês com assinatura); motivo explícito desde o início; descrição lógica dos problemas; pedidos e sugestões diretamente ligados à reclamação; tom firme e respeitoso. Sugestão de melhoria: busque ainda mais precisão no vocabulário e na formulação dos pedidos, evitando qualquer informação repetida.",
+        "5": "Adequação exemplar: carta de reclamação muito bem planejada e estruturada, cumpre com excelência a proposta temática e o gênero; motivo cristalino logo na introdução; problemas descritos com clareza e em ordem lógica; argumentos concretos (causas, consequências, exemplos) fortalecem a credibilidade da reclamação; pedidos de providência objetivos, plausíveis e proporcionais; sugestões de mudança realistas e pertinentes; tom diplomático e seguro em todo o texto. Sugestão de melhoria: manter o padrão de organização e cortesia, explorando, quando possível, um vocabulário ainda mais preciso e expressivo."
+      }
+    },
+    {
+      "id": "C2",
+      "name": "Coesão e coerência",
+      "weight": 0.20,
+      "levels": {
+        "0": "Texto sem sequência lógica: ideias desconexas, parágrafos que não se relacionam, uso praticamente inexistente de conectivos; forte sensação de lista desorganizada de frases. Sugestão de melhoria: antes de escrever, faça um esboço com os parágrafos em ordem; durante a revisão, confira se cada frase se liga à anterior por algum conector ou retomada.",
+        "1": "Coesão e coerência muito frágeis: há alguma tentativa de sequência, mas com muitos saltos, repetições desnecessárias e conectivos mal usados ou ausentes; partes da carta se afastam do foco da reclamação ou do destinatário. Sugestão de melhoria: use conectivos simples (porque, portanto, porém, além disso, por isso) para ligar as ideias e evite repetir as mesmas palavras ou frases sem necessidade.",
+        "2": "Coesão e coerência básicas: a carta apresenta uma lógica geral reconhecível, mas ainda com quebras de progressão, repetições perceptíveis e uso limitado de conectores; algumas ideias se encaixam bem, outras ficam apenas sugeridas. Sugestão de melhoria: revise parágrafo por parágrafo, verificando se cada um aprofunda um aspecto da reclamação; substitua repetições por sinônimos e varie um pouco mais os conectivos.",
+        "3": "Boa coesão e coerência: texto em ordem lógica, com parágrafos encadeados; uso adequado de conectivos; retomadas claras de informações importantes; poucas repetições. Sugestão de melhoria: experimente conectivos mais variados (além disso, por consequência, por outro lado, dessa forma) para deixar a progressão ainda mais fluida.",
+        "4": "Coesão e coerência consistentes: progressão natural das ideias, parágrafos bem articulados, conectivos variados e bem empregados; quase nenhuma repetição incômoda; todas as partes da carta contribuem para a reclamação e para o convencimento do destinatário. Sugestão de melhoria: revisar apenas detalhes de estilo, buscando transições ainda mais elegantes entre os parágrafos.",
+        "5": "Coesão e coerência exemplares: texto muito fluido, com excelente encadeamento entre frases e parágrafos; uso preciso e variado de conectivos; retomadas eficientes; ausência de repetições desnecessárias; cada trecho reforça o foco da reclamação e o público-alvo. Sugestão de melhoria: manter o padrão de organização, cuidando apenas de pequenos ajustes finos de estilo quando necessário."
+      }
+    },
+    {
+      "id": "C3",
+      "name": "Adequação às regras da gramática normativa",
+      "weight": 0.20,
+      "levels": {
+        "0": "Graves problemas gramaticais e de registro: linguagem muito informal ou inadequada ao contexto; muitos erros de ortografia, acentuação, concordância e pontuação que comprometem a compreensão da carta. Sugestão de melhoria: revise com um foco por vez (ortografia, depois pontuação, depois concordância) e, se possível, leia o texto em voz alta para perceber onde falta ou sobra pausa.",
+        "1": "Atende muito parcialmente às regras: presença de várias marcas de informalidade (gírias, abreviações, tratamento excessivamente coloquial) e número significativo de erros de ortografia, acentuação ou concordância; pontuação irregular, mas ainda compreensível. Sugestão de melhoria: substituir gírias por palavras formais, usar dicionário em dúvidas de grafia e revisar frases muito longas que acumulam erros.",
+        "2": "Padrão básico: alguns erros de ortografia, acentuação, concordância ou pontuação, mas que não impedem a compreensão; registro às vezes oscila entre formal e informal. Sugestão de melhoria: reforçar a revisão final, principalmente de acentos, plurais, concordância verbal/nominal e escolha de pronomes; ajustar o tom para mantê-lo sempre cortês e formal.",
+        "3": "Bom domínio da norma: poucos erros gramaticais, em geral não repetitivos; pontuação suficiente para garantir compreensão; registro predominantemente formal e adequado ao gênero. Sugestão de melhoria: observar os erros que ainda aparecem (por exemplo, vírgula entre sujeito e verbo, uso de por que/porque) e montar uma lista pessoal para evitar repeti-los.",
+        "4": "Domínio consistente: raros deslizes de ortografia ou concordância; pontuação bem utilizada; vocabulário adequado e variado; linguagem claramente formal e cortês. Sugestão de melhoria: explorar um pouco mais a variedade lexical (sinônimos, expressões formais) e revisar detalhes finos de pontuação para ganhar ainda mais precisão.",
+        "5": "Domínio excelente da norma-padrão: carta muito bem escrita, com ortografia e acentuação corretas, concordância adequada, pontuação clara e eficiente; vocabulário rico e preciso, sempre em registro formal e cortês. Sugestão de melhoria: manter o padrão, buscando apenas pequenos aprimoramentos de estilo, como escolhas léxicas ainda mais precisas ou construções sintáticas mais elegantes."
+      }
+    }
+  ],
+  "rules": [
+    {
+      "id": "nota_zero_condicoes",
+      "label": "Condições de nota zero",
+      "criterion_ids": ["C1", "C2", "C3"],
+      "type": "cap_level",
+      "max_level": 0,
+      "when": "Texto em branco; fuga total à proposta ou ao gênero carta de reclamação; texto completamente desconexo da situação pedida; cópia de mais de três linhas da coletânea ou de outra fonte; texto com teor ofensivo grave incompatível com os princípios da escola.",
+      "explanation_required": true
+    }
+  ]
+}
